@@ -18,6 +18,5 @@ def print_table(cur):
 
 if __name__ == '__main__':
     with psycopg2.connect(dbname="postgres", user="postgres", password="example") as conn:
-        cur = conn.cursor()
-        print_table(cur)
-        cur.close()
+        with conn.cursor() as cur:
+            print_table(cur)

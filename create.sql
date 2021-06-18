@@ -1,8 +1,8 @@
-create table tvshows (
-    id int primary key ,
-    name varchar,
-    url varchar,
-    premiered date,
-    status varchar
+CREATE TABLE tvshows (
+    id INT PRIMARY KEY ,
+    name VARCHAR ,
+    url VARCHAR ,
+    premiered DATE,
+    status VARCHAR
 
 );
